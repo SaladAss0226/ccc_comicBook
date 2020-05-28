@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:elevation="0dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="20dp">
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+
+    <!--        app:layout_constraintGuide_percent="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:id="@+id/imgv_smallcard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+
+
+            android:src="@drawable/subject_card"
+            app:layout_constraintBottom_toTopOf="@id/tv_title_smallcard"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/tv_title_smallcard"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_title"
+            android:text="報導標題報導標題報導標題報導標題報導標題報導標題報導標題"
+            android:textSize="16dp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="@id/imgv_smallcard"
+            app:layout_constraintStart_toStartOf="@id/imgv_smallcard"
+            app:layout_constraintTop_toBottomOf="@id/imgv_smallcard" />
+
+        <TextView
+
+            android:id="@+id/tv_content_smallcard"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/color_content"
+            android:text="文字摘要文字摘要文字摘要文字摘要文字摘要文字摘要文字摘要文字摘要"
+            android:textSize="14dp"
+
+            app:layout_constraintEnd_toEndOf="@id/imgv_smallcard"
+            app:layout_constraintStart_toStartOf="@id/imgv_smallcard"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_smallcard" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
